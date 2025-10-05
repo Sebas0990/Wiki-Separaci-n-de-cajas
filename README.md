@@ -45,7 +45,7 @@ El proyecto académico tiene como propósito **simular la automatización** de e
 | **Fuente de energía**    | Powerbank 5 V (Arduino + servos) y fuente adicional 12 V (banda)                       |
 | **Entradas adicionales** | Botón START y botón RESET                                                              |
 | **Salidas adicionales**  | LED de error (E)                                                                       |
-| **Estructura mecánica**  | Banda transportadora de tela, rodillos de plástico y base de acrílico                  |
+| **Estructura mecánica**  | Banda transportadora de tela, rodillos de plástico y base de carton paja               |
 
 ---
 
@@ -170,15 +170,78 @@ El botón RESET y el LED de error respondieron adecuadamente.
 - Arduino + OpenPLC es viable como plataforma educativa.  
 - Futuras mejoras: control de velocidad, conteo de cajas, integración con HMI.  
 - El ciclo de vida seguido refleja buenas prácticas de ingeniería de automatización.  
+---
+
+## 15. Actas
+### ACTA 1
+**Fecha:** 29/09/2025  
+**Hora:** 3:00 – 4:00  
+**Lugar:** Salón de automatización  
+
+**Objetivo:**  
+Empezar a diseñar cómo solucionar el problema planteado y, una vez definido el diseño, elaborar la lista de materiales para su compra.  
+
+**Temas tratados:**  
+- Diseño del proyecto  
+- Lista de materiales  
+- Compra de materiales  
+
+**Acuerdos y compromisos:**  
+- **Actividad:** Comprar materiales  
+- **Responsable:** Sebastián  
+- **Fecha de cumplimiento:** 30/09/2025  
+
+**Próximos pasos:**  
+- Diseño de simulación en CODESYS  
+- Programación del código en OpenPLC  
+- Cableado del proyecto  
 
 ---
 
-## 15. Uso de inteligencia artificial
+### ACTA 2
+**Fecha:** 01/10/2025  
+**Hora:** 9:00 – 1:30  
+**Lugar:** Salón de automatización y casa de Juan  
+
+**Objetivo:**  
+Trasladar la idea del diseño planteado a una simulación funcional en CODESYS; después de confirmar su funcionamiento, implementar el código en OpenPLC.  
+
+**Temas tratados:**  
+- Lógica de programación  
+
+**Acuerdos y compromisos:**  
+- **Actividad:** Comenzar la Wiki  
+  - **Responsable:** Juan  
+  - **Fecha de cumplimiento:** 04/10/2025  
+- **Actividad:** Hacer actas  
+  - **Responsable:** Sebastián  
+  - **Fecha de cumplimiento:** 05/10/2025  
+
+**Próximos pasos:**  
+- Cableado del proyecto  
+
+---
+
+### ACTA 3
+**Fecha:** 03/10/2025  
+**Hora:** 11:00 – 4:30  
+**Lugar:** Casa de Sebastián  
+
+**Objetivo:**  
+Finalizar el proyecto cableando la solución propuesta.  
+
+**Temas tratados:**  
+- Maqueta y conexiones  
+---
+
+## 16. Uso de inteligencia artificial
 Se utilizó **ChatGPT (GPT-5)** únicamente para corrección de redacción y formato.  
 El contenido técnico fue desarrollado por el equipo.  
 Referencias técnicas: IEC 61131-3, IEC 60204-1, ISO 12100.  
 
-## 16. Referencias
+---
+
+## 15. Referencias
 [1] I. Patait, S. Bhosale, S. Shinde, S. Shinde, P. Gokhale, M. Kokare, “Automated Height Based Box Sorting System Using PLC,” International Engineering Journal For Research & Development, vol. 5, no. 5, p. 6, Jun. 2020. 
 iejrd.com
 
