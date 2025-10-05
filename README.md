@@ -95,8 +95,6 @@ El proyecto académico tiene como propósito **simular la automatización** de e
 
 **Alimentación:**
 - Powerbank 5 V (Arduino + servos)  
-- Fuente 12 V (motores banda)  
-- GND común para ambas fuentes.  
 
 ---
 
