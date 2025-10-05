@@ -129,7 +129,7 @@ El proyecto académico tiene como propósito **simular la automatización** de e
 | 0  | 1  | 1  | 0 | 0 | 0 | 1 | Error (detección sin base)       |
 | 1  | 0  | 0  | 1 | 0 | 0 | 0 | Caja pequeña                     |
 | 1  | 0  | 1  | 0 | 1 | 0 | 0 | Caja mediana                     |
-| 1  | 1  | 0  | 0 | 0 | 1 | 0 | Caja grande                      |
+| 1  | 1  | 0  | 0 | 0 | 0 | 1 | Error (base y tapa no conectadas)|
 | 1  | 1  | 1  | 0 | 0 | 1 | 0 | Caja grande                      |
 
 ---
