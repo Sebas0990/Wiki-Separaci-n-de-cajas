@@ -106,7 +106,7 @@ El proyecto académico tiene como propósito **simular la automatización** de e
 | S2        | BOOL | Entrada    | Sensor medio                      |
 | S3        | BOOL | Entrada    | Sensor superior                   |
 | START     | BOOL | Entrada    | Botón de inicio                   |
-| RESET     | BOOL | Entrada    | Botón de reinicio                 |
+| STOP      | BOOL | Entrada    | Botón de parar                    |
 | A         | BOOL | Salida     | Servo desviador de cajas pequeñas |
 | B         | BOOL | Salida     | Servo desviador de cajas medianas |
 | C         | BOOL | Salida     | Servo desviador de cajas grandes  |
