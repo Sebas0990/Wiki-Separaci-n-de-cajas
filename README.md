@@ -177,3 +177,17 @@ El botón RESET y el LED de error respondieron adecuadamente.
 Se utilizó **ChatGPT (GPT-5)** únicamente para corrección de redacción y formato.  
 El contenido técnico fue desarrollado por el equipo.  
 Referencias técnicas: IEC 61131-3, IEC 60204-1, ISO 12100.  
+
+## 16. Referencias
+[1] I. Patait, S. Bhosale, S. Shinde, S. Shinde, P. Gokhale, M. Kokare, “Automated Height Based Box Sorting System Using PLC,” International Engineering Journal For Research & Development, vol. 5, no. 5, p. 6, Jun. 2020. 
+iejrd.com
+
+[2] A. H. Embong, L. Asbollah, S. B. Abdul Hamid, “Empowering Industrial Automation Labs with IoT: A Case Study on Real-Time Monitoring and Control of Induction Motors using Siemens PLC and Node-RED,” Journal of Mechanical Engineering and Sciences, 2024.
+
+[3] MY CREATIVE ENGINEERING, "Arduino Obstacle Detector Using IR Sensor & Buzzer | Simple DIY Project," YouTube, 25-Jun-2025. [Online]. Available: https://www.youtube.com/watch?v=RU3AELndZbk. [Accessed: 05-Oct-2025].
+
+[4] Muy Fácil De Hacer, "Proyectos | Cinta Transportadora Casera (muy fácil de hacer)," YouTube, 12-Mar-2016. [Online]. Available: https://www.youtube.com/watch?v=7UsmJgHU6wk. [Accessed: 05-Oct-2025].
+
+
+
+
