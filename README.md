@@ -277,6 +277,15 @@ iejrd.com
 
 [4] Muy Fácil De Hacer, "Proyectos | Cinta Transportadora Casera (muy fácil de hacer)," YouTube, 12-Mar-2016. [Online]. Available: https://www.youtube.com/watch?v=7UsmJgHU6wk. [Accessed: 05-Oct-2025].
 
+[5] Outseal, “PWM dan Frekuensi,” Outseal PLC Tutorial, 2022. [Online]. Available: https://www.outseal.com/tutorial/pwm/pwm.html. [Accessed: 05-Oct-2025].
+
+[6] Outseal, “PWM dan Frekuensi,” Outseal PLC Tutorial, 2022. [Online]. Available: https://www.outseal.com/tutorial/pwm/pwm.html. [Accessed: 05-Oct-2025].
+
+[7] El Profe Zurco, "OpenPLC Cap_21 Sensor de temperatura DS18B20 en OpenPLC manejo de temperatura en variable REAL," YouTube, 26-May-2024. [Online]. Available: https://www.youtube.com/watch?v=sI2C7mhsAVY. [Accessed: 05-Oct-2025].
+
+
+
+
 
 
 
