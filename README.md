@@ -42,8 +42,8 @@ El proyecto académico tiene como propósito **simular la automatización** de e
 | **Sensores**             | 3 × Módulos de proximidad infrarrojos con salida digital ON/OFF                        |
 | **Actuadores**           | 3 × Servomotores (4.8–6 VDC, 0.12 s/60°, torque 1.8–2.2 kg·cm, piñonería plástica)     |
 | **Motores de banda**     | 2 × Motores DC de 12 V para tracción                                                   |
-| **Fuente de energía**    | Powerbank 5 V (Arduino + servos) y fuente adicional 12 V (banda)                       |
-| **Entradas adicionales** | Botón START y botón RESET                                                              |
+| **Fuente de energía**    | Powerbank 5 V                                                                          |
+| **Entradas adicionales** | SWitch START y botón RESET                                                             |
 | **Salidas adicionales**  | LED de error (E)                                                                       |
 | **Estructura mecánica**  | Banda transportadora de tela, rodillos de plástico y base de carton paja               |
 
@@ -61,10 +61,7 @@ El proyecto académico tiene como propósito **simular la automatización** de e
 
 ## 6. Restricciones de diseño
 - Complejidad en la fabricación de la **banda transportadora** (equilibrio entre elasticidad y rigidez del material).  
-- El **motor inicial** presentaba alta velocidad y baja fuerza; se reemplazó por **dos motores de 12 V**.  
-- Alimentación mixta (5 V y 12 V) que requirió adaptación de fuentes y controladores.  
-- Limitación de torque de los servos (solo aptos para maquetas).  
-- Proyecto enfocado en validación funcional, sin registro de datos ni interfaz HMI.  
+- El **motor inicial** presentaba alta velocidad y baja fuerza; se reemplazó por **dos motores de 12 V**. 
 
 ---
 
@@ -145,14 +142,21 @@ El proyecto académico tiene como propósito **simular la automatización** de e
 ---
 
 ## 12. Lógica Ladder
-> Implementada en **Ladder Diagram (LD)** según norma IEC 61131-3 con OpenPLC o CODESYS.  
 
-**Bloques principales:**
-- Start/Stop del sistema.  
-- Temporizador de medición (TON 3 s).  
-- Clasificación según tabla de verdad.  
-- Detección de errores.  
-- Bloque de reinicio.  
+# Codesys
+<img width="1159" height="647" alt="image" src="https://github.com/user-attachments/assets/2db45996-f003-4883-8e9f-4297c3d6e001" />
+
+# Openplc
+<img width="1612" height="458" alt="image" src="https://github.com/user-attachments/assets/b0fba230-1452-4845-9f47-265c1e32dad1" />
+<img width="1580" height="197" alt="image" src="https://github.com/user-attachments/assets/2560e43e-3380-46c8-a459-d82588c17683" />
+<img width="1641" height="566" alt="image" src="https://github.com/user-attachments/assets/9cf19273-cdb7-482d-8f6b-c334dfa97ba8" />
+<img width="1588" height="521" alt="image" src="https://github.com/user-attachments/assets/1b7e44e3-acda-48f3-b914-91c2d851fc05" />
+<img width="1583" height="443" alt="image" src="https://github.com/user-attachments/assets/70842661-0e83-458a-ad0e-ca3284421e76" />
+<img width="1590" height="274" alt="image" src="https://github.com/user-attachments/assets/19ffcd2e-d4bc-4e2b-b0fb-38f1c3288655" />
+<img width="1573" height="222" alt="image" src="https://github.com/user-attachments/assets/67cbaa61-d369-4d47-8d1f-7cf4a2c6eed9" />
+<img width="914" height="692" alt="image" src="https://github.com/user-attachments/assets/c6690453-a046-4932-b7c1-69e5e91cfe50" />
+
+
 
 ---
 
@@ -186,7 +190,7 @@ Empezar a diseñar cómo solucionar el problema planteado y, una vez definido el
 
 **Acuerdos y compromisos:**  
 - **Actividad:** Comprar materiales  
-- **Responsable:** Sebastián  
+- **Responsable:** Sebastián   
 - **Fecha de cumplimiento:** 30/09/2025  
 
 **Próximos pasos:**  
@@ -209,7 +213,7 @@ Trasladar la idea del diseño planteado a una simulación funcional en CODESYS; 
 
 **Acuerdos y compromisos:**  
 - **Actividad:** Comenzar la Wiki  
-  - **Responsable:** Juan  
+  - **Responsable:** Sebastián  
   - **Fecha de cumplimiento:** 04/10/2025  
 - **Actividad:** Hacer actas  
   - **Responsable:** Sebastián  
@@ -229,17 +233,41 @@ Trasladar la idea del diseño planteado a una simulación funcional en CODESYS; 
 Finalizar el proyecto cableando la solución propuesta.  
 
 **Temas tratados:**  
-- Maqueta y conexiones  
+- Maqueta y conexiones
+- 
 ---
 
-## 16. Uso de inteligencia artificial
+## 16. Diseño modular de la maqueta
+
+La maqueta del sistema fue construida de manera **modular**, dividiendo cada sección en bloques independientes:
+
+- **Módulo de sensado:** incluye los tres sensores infrarrojos de proximidad.  
+- **Módulo de actuadores:** contiene los servomotores y el LED indicador de error.  
+- **Módulo de transporte:** integra la banda transportadora con sus motores de tracción.  
+- **Módulo de control:** corresponde al Arduino Uno con sus conexiones a entradas y salidas.  
+
+Este enfoque **facilitó el cableado**, ya que permitió organizar el sistema por funciones, simplificar las pruebas de cada bloque por separado y reducir la posibilidad de errores durante la integración.
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/ff0f5a1d-39cc-4cf8-8563-8d02275b3fc8" />
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/b5cba8e4-eac7-4fdb-8750-36e78ec88d92" />
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/94a5ae1d-4927-41ad-972f-294c3a26682f" />
+
+<img width="900" height="1600" alt="image" src="https://github.com/user-attachments/assets/7c944a56-c6ba-4bfb-80d7-1dab78a1217d" />
+
+<img width="720" height="1280" alt="image" src="https://github.com/user-attachments/assets/21174d2b-d187-4d8f-bbb5-3939f608cff7" />
+
+
+
+## 17. Uso de inteligencia artificial
 Se utilizó **ChatGPT (GPT-5)** únicamente para corrección de redacción y formato.  
 El contenido técnico fue desarrollado por el equipo.  
 Referencias técnicas: IEC 61131-3, IEC 60204-1, ISO 12100.  
 
 ---
 
-## 15. Referencias
+## 18. Referencias
 [1] I. Patait, S. Bhosale, S. Shinde, S. Shinde, P. Gokhale, M. Kokare, “Automated Height Based Box Sorting System Using PLC,” International Engineering Journal For Research & Development, vol. 5, no. 5, p. 6, Jun. 2020. 
 iejrd.com
 
